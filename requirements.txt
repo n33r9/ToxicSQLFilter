@@ -1,0 +1,19 @@
+# ASTSafeSQL — Minimal Dependencies
+# Removed: torch, transformers, sentence-transformers (semantic layer stripped)
+#          scikit-learn (cosine_similarity no longer needed)
+#          sqlalchemy, psycopg2-binary (sandbox/DB execution removed)
+#          fastapi, uvicorn, pydantic (API server removed)
+#          redis, docker (sandbox infrastructure removed)
+
+# SQL parsing & AST
+sqlglot==18.16.0
+
+# Graph utilities (networkx used by ast_align)
+networkx==3.1
+
+# Numeric
+numpy==1.24.3
+
+# Testing & evaluation
+pytest==7.4.3
+tqdm>=4.60.0
